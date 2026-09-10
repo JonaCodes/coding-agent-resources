@@ -5,7 +5,7 @@ manual-only: true
 disable-model-invocation: true
 ---
 
-We are now ready to implement the task. If this is a small implementation, do it yourself. But if this requires implementing logic, a new feature, multiple files, or similar, then you should spin up one or more subagents to implement the task. You can use one of these subagents for the task:
+We are now ready to implement the task. If this is a small implementation, do it yourself. But if this requires implementing logic, a new feature, multiple files, or similar, then you should spin up one or more subagents to implement the task. You can use any of these subagents for the task, and even spin up multiple of them when it makes sense:
 
 - @junior-implementor
 - @experienced-implementor

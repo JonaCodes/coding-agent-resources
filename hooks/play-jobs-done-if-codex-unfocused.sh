@@ -12,4 +12,4 @@ frontmost_is_codex="$({
 [[ "$frontmost_is_codex" == "false" ]] || exit 0
 
 # Audio is best-effort; never turn a notification failure into a hook failure.
-/usr/bin/afplay /Users/jona/.claude/custom-assets/jobs-done.mp3 >/dev/null 2>&1 || true
+/usr/bin/afplay -v 0.05 /Users/jona/.claude/custom-assets/jobs-done.mp3 >/dev/null 2>&1 || true

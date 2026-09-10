@@ -10,6 +10,8 @@ Start by reviewing the local changes in this repo, then read `docs/index.md` to 
 
 **Note:** it is possible that no documentation updates are necessary if the changes are minor. This is fine, just inform the user about it.
 
+**Note:** only update docs. No need to run tests/lint/anything again.
+
 ## Creating and Updating Docs:
 
 - All documentation should live in a `docs/` directory at the project root.
@@ -34,4 +36,5 @@ Start by reviewing the local changes in this repo, then read `docs/index.md` to 
 - When deleting entire documentation files/subdirectories, let the user know with a short reason.
 - Do not document callbacks or references to old, non-existant code. The docs should be current-status snapshots, not archive logs of what used to be.
 - Do not bloat documentation files just for the sake of adding docs.
+- Do not include direct strings from the code in the docs, this is prone to drift. Generally avoid "quoting" the code.
 - After adding new documentation, run a short keyword scan against existing docs to ensure you haven't accidentally duplicated docs.

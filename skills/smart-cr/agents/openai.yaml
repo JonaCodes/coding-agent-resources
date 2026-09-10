@@ -1,0 +1,4 @@
+interface:
+  display_name: "Smart CR"
+  short_description: "Scale focused YAGNI review to the current Git diff"
+  default_prompt: "Use $smart-cr to review the current Git changes and report only relevant findings."
