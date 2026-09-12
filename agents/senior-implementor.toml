@@ -1,6 +1,6 @@
 name = "senior-implementor"
 description = "Use for challenging architecture implementations, critical flows, and work involving data, privacy, billing, or other high-consequence behavior."
-model = "gpt-5.6-sol"
+model = "gpt-6-astra"
 model_reasoning_effort = "low"
 sandbox_mode = "workspace-write"
 
