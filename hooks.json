@@ -2,6 +2,17 @@
   "hooks": {
     "PreToolUse": [
       {
+        "matcher": "^request_user_input$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/jona/.codex/hooks/block-request-user-input.sh",
+            "statusMessage": "Requiring a plain-text question",
+            "timeout": 10
+          }
+        ]
+      },
+      {
         "matcher": ".*",
         "hooks": [
           {

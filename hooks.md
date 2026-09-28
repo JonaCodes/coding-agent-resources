@@ -24,6 +24,7 @@ The checker sources the policy file at runtime, so keep both in the same directo
 
 ## Standalone hooks
 
+- `block-request-user-input.sh` prevents the structured `request_user_input` prompt and tells Codex to ask the same question in plain text instead.
 - `block-sensitive-file-access.sh` blocks tool access to common secret-bearing files such as `.env` and `.dev.vars`, while allowing example files.
 - `format-after-apply-patch.sh` formats files changed through `apply_patch` when it can find Prettier.
 - `check-tests.sh` runs a project-specific validation command before Codex stops.
