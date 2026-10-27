@@ -23,6 +23,4 @@ For each subagent you spin up, you must:
 - Instruct it to read the documentation relevant to the task (if any), starting at `docs/index.md`.
 - Instruct each agent to implement their task as best as they can, run reasonable checks themselves, but focus on the task at hand. No need to chase endless edge cases or tangents. Just get something working and let me tinker with it.
 
-When _all_ implementor subagents are finished, you may consider running a `/double-cr` _if_ the scope/complexity merits it. If it is a small or straightforward task, there is no need for a full double CR.
-
 If you are unsure whether to spin up subagents, or which subagents to use, consult with me.

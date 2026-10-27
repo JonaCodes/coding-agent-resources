@@ -24,9 +24,10 @@ mkdir -p "$SESSION_DIR" 2>/dev/null || {
 
 # Match both $skill-name and /skill-name tokens. Names are normalized to
 # lowercase and deduplicated while retaining their first occurrence.
+# Treat grep's no-match status as an empty skill list, preserving other errors.
 SKILLS_JSON="$({
   printf '%s' "$PROMPT" |
-    grep -oE '(^|[^[:alnum:]_])(\$|/)[[:alnum:]][[:alnum:]_.:-]*' 2>/dev/null |
+    { grep -oE '(^|[^[:alnum:]_])(\$|/)[[:alnum:]][[:alnum:]_.:-]*' 2>/dev/null || [ "$?" -eq 1 ]; } |
     sed -E 's/^[^$\/]*//' |
     sed -E 's/^[$\/]//' |
     sed -E 's/[.,!?;)]*$//' |

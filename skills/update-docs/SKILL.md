@@ -35,6 +35,7 @@ Start by reviewing the local changes in this repo, then read `docs/index.md` to 
 - If an existing documentation file or directory is no longer relevant (i.e a feature has been removed or refactored beyond recognition), delete it and remove any references to it from other documentation files (including from `docs/index.md`).
 - When deleting entire documentation files/subdirectories, let the user know with a short reason.
 - Do not document callbacks or references to old, non-existant code. The docs should be current-status snapshots, not archive logs of what used to be.
-- Do not bloat documentation files just for the sake of adding docs.
-- Do not include direct strings from the code in the docs, this is prone to drift. Generally avoid "quoting" the code.
-- After adding new documentation, run a short keyword scan against existing docs to ensure you haven't accidentally duplicated docs.
+- Ensure no documentation is bloated: remove repetition and unnecessary detail from the docs you review instead of only adding more text.
+- Ensure documentation files do not overlap: keep each topic in one canonical place and link to it from related docs. Consolidate overlapping content when updating it.
+- Do not quote or paraphrase the code. Explain purpose, behavior, and important gotchas, then use file or symbol pointers for implementation details instead of restating the implementation.
+- After updating documentation, run a short keyword scan against existing docs to find and resolve duplicated or overlapping content.
